@@ -55,15 +55,3 @@ def generate_line(target_syll):
         current_syll_count += count_syll(word)
         
     return ' '.join(line)
-
-#   Function for generating a Haiku
-def generate_haiku():
-    line1 = generate_line(5)
-    line2 = generate_line(7)
-    line3 = generate_line(5)
-    
-    haiku = f"{line1}\n{line2}\n{line3}"
-    return haiku
-
-#   Haiku generated
-print(generate_haiku())
